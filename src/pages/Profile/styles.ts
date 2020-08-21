@@ -19,6 +19,8 @@ export const Main = styled.div`
 `;
 
 export const LeftSide = styled.div`
+   padding: 0 var(--horizontal-padding);
+
    @media (min-width: 768px) {
       width: 25%;
    }
@@ -49,4 +51,10 @@ export const Repos = styled.div`
          grid-auto-rows: minmax(min-content, max-content);
       }
    }
+`;
+
+export const CalendarHeading = styled.span`
+   font-size: 16px;
+   margin: 36px 0 9px;
+   display: inline-flex;
 `;
