@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { Container, Breadcrumb, RepoIcon, Stars, StarIcon, ForkIcon, LinkButtom, GithubIcon } from './styles';
+import { Container, Breadcrumb, RepoIcon, Stars, StarIcon, ForkIcon, LinkButton, GithubIcon } from './styles';
 
 const Repo = () => {
    return (
@@ -34,10 +34,10 @@ const Repo = () => {
             </li>
          </Stars>
 
-         <LinkButtom href={'https://github.com'}>
+         <LinkButton href={'https://github.com'}>
             <GithubIcon />
             <span>View on GitHub</span>
-         </LinkButtom>
+         </LinkButton>
       </Container>
    );
 };
