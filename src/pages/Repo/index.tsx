@@ -1,7 +1,45 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
+import { Container, Breadcrumb, RepoIcon, Stars, StarIcon, ForkIcon, LinkButtom, GithubIcon } from './styles';
+
 const Repo = () => {
-   return <h1>Profile</h1>;
+   return (
+      <Container>
+         <Breadcrumb>
+            <RepoIcon />
+            <Link className={'username'} to={'/username'}>
+               username
+            </Link>
+            <span>/</span>
+
+            <Link className={'reponame'} to={'/username/reponame'}>
+               reponame
+            </Link>
+         </Breadcrumb>
+
+         <p>Description</p>
+
+         <Stars>
+            <li>
+               <StarIcon />
+               <b>5</b>
+               <span>stars</span>
+            </li>
+            <li>
+               <ForkIcon />
+               <b>0</b>
+               <span>forks</span>
+            </li>
+         </Stars>
+
+         <LinkButtom href={'https://github.com'}>
+            <GithubIcon />
+            <span>View on GitHub</span>
+         </LinkButtom>
+      </Container>
+   );
 };
 
 export default Repo;
